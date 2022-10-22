@@ -1,29 +1,29 @@
 package com.luv2code.ecommerce.entity;
 
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import javax.persistence.*;
 
+import lombok.Data;
+
+
+import javax.persistence.*;
+import java.sql.Timestamp;
 
 
 @Entity
 @Data
 @Table(name="reception_table")
-public class Product {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-
-
+    
     @Column(name = "arrival_time")
-    private String arrival_time;
+    private Timestamp arrival_time;
 
     @Column(name = "departure_time")
-    private String departure_time;
+    private Timestamp departure_time;
 
     @Column(name = "guest_name")
     private String guest_name;
