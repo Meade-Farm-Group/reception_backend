@@ -40,7 +40,5 @@ public class User {
     @Column(name = "area")
     private String area;
 
-    @Column(name = "signed_out")
-    private Boolean signed_out;
 
 }
