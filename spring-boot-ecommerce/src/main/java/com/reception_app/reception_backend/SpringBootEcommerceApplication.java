@@ -1,4 +1,4 @@
-package com.luv2code.ecommerce;
+package com.reception_app.reception_backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

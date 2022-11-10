@@ -1,6 +1,6 @@
-package com.luv2code.ecommerce.config;
+package com.reception_app.reception_backend.config;
 
-import com.luv2code.ecommerce.entity.User;
+import com.reception_app.reception_backend.entity.User;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
