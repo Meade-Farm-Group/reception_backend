@@ -2,11 +2,9 @@ package com.reception_app.reception_backend.entity;
 
 
 
-import lombok.Data;
-
 
 import javax.persistence.*;
-import java.sql.Timestamp;
+
 import java.time.LocalDateTime;
 
 
@@ -15,9 +13,21 @@ import java.time.LocalDateTime;
 @Table(name="reception_table")
 public class User {
 
+public User(){}
+
+    public User(LocalDateTime arrival_time, LocalDateTime departure_time, String guest_name, String guest_company, String phone_number, String host_employee, String area) {
+        this.arrival_time = arrival_time;
+        this.departure_time = departure_time;
+        this.guest_name = guest_name;
+        this.guest_company = guest_company;
+        this.phone_number = phone_number;
+        this.host_employee = host_employee;
+        this.area = area;
+    }
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id", nullable = false, updatable = false)
     private Long id;
 
     @Column(name = "arrival_time")
@@ -104,4 +114,6 @@ public class User {
     public void setArea(String area) {
         this.area = area;
     }
+
+
 }
