@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import java.util.Optional;
 
 @Repository
+@CrossOrigin
 public interface UserRepository extends JpaRepository<User, Integer> {
 
     User getByName(String name);
